@@ -1,6 +1,4 @@
-var menu = menu || [];
-
-menu[6] = {
+exports.menuitem = {
   title: 'Photos',
   items: [
     {

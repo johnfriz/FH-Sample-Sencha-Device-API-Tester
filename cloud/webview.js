@@ -1,6 +1,4 @@
-var menu = menu || [];
-
-menu[11] = {
+exports.menuitem = {
   title: 'Webview',
   items: [
     {

@@ -1,6 +1,4 @@
-var menu = menu || [];
-
-menu[9] = {
+exports.menuitem = {
   title: 'Map',
   layout: {
     type: 'vbox',

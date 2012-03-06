@@ -1,6 +1,4 @@
-var menu = menu || [];
-
-menu[10] = {
+exports.menuitem = {
   title: 'Audio',
   items: [{
     ui_type: 'Ext.Button',

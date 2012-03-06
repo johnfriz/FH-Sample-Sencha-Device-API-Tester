@@ -1,6 +1,4 @@
-var menu = menu || [];
-
-menu[3] = {
+exports.menuitem = {
   title: 'Geolocation',
   items: [{
     ui_type: 'Ext.Panel',

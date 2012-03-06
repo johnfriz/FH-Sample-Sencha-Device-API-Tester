@@ -1,6 +1,4 @@
-var menu = menu || [];
-// Define the 5th item in the menu
-menu[5] = {
+exports.menuitem = {
   title: 'Notify', // Title as it should appear in Menu
   
   // Array of items that should be in the Notify menu item

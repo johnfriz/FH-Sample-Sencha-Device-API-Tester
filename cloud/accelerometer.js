@@ -1,6 +1,4 @@
-var menu = menu || [];
-
-menu[4] = {
+exports.menuitem = {
   title: 'Accelerometer',
   items: [{
     ui_type: 'Ext.Panel',

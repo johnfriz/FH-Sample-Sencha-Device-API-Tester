@@ -1,6 +1,4 @@
-var menu = menu || [];
-
-menu[0] = {
+exports.menuitem = {
   title: 'Contacts',
   items: [{
     ui_type: 'Ext.Button',
