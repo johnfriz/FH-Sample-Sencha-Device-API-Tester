@@ -34,7 +34,7 @@ app = function () {
     },
     
     initialiseMenu: function (definition) {
-      inst.v.menuDef = app.v.parser.parseMenuDef(definition);
+      inst.v.menuDef = app.v.parser.parseMenuDef(definition.menu);
       
       // initialise the main View
       inst.v.mainPanel = new app.v.main({
