@@ -1,0 +1,93 @@
+<!--
+
+FeedHenry API Tester App built using the Sencha Touch Javascript Framework
+
+Useful Links:
+  Full App Documentation: http://docs.feedhenry.com/wiki/Sencha_Device_API_Tester_App
+  FeedHenry API: http://docs.feedhenry.com/wiki/API_Reference
+  Sencha Touch: http://www.sencha.com/products/touch/
+  MVC: http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+
+Using the App:
+  Should be realatively straightforward. Each part of the API has
+  a separate menu item. The code for each section can be found in the
+  relevant javascript files e.g. contacts.js
+
+App Structure:
+  As much as possible, the app follows the MVC application pattern.
+  There is one major difference though, and that is the View code is
+  server-side (/ext/server/private/). When the App initialises, it makes an AJAX
+  call to get the View structure, which is then translated (with the help of 
+  /script/view/parser.js) before being passed in the Sencha Framework. 
+  This allows for tweaking of the View layout post deployment of the App.
+
+  The application code, or business logic is in the controllers
+  (/script/controller/). Each menu item has it's own controller, which the 
+  View has callbacks to.
+
+  There are a few Models used by the App (/script/model/) such as the 
+  Contact model. These models are defined using the Sencha model registration
+  method (Ext.regModel)
+
+Third party resources:
+  All third party resources are located in /resources/. The Sencha Touch library
+  can be found in here.
+
+-->
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Device API Tester</title>
+
+<!-- Required Sencha files -->
+<script type="text/javascript" src="resources/sencha-touch.js"></script>
+
+
+<!-- Initialisation -->
+<script type="text/javascript" src="script/app.js"></script>
+
+
+<!-- Additional setup -->
+<script type="text/javascript" src="script/setup/setup.js"></script>
+
+
+<!-- Utility (app.u)-->
+<script type="text/javascript" src="script/utility/notification.js"></script>
+
+
+<!-- Helper (app.h)-->
+<script type="text/javascript" src="script/helper/fixes.js"></script>
+
+
+<!-- Models (app.m) -->
+<script type="text/javascript" src="script/model/contact.js"></script>
+<script type="text/javascript" src="script/model/apiitem.js"></script>
+
+
+<!-- Views (app.v)
+  See comment at top of page for more info on the View.
+  The menu items for the View are defined server-side. The client side
+  View files required here are the main Panel/Container definition and some
+  server-side parsing helpers
+-->
+<script type="text/javascript" src="script/view/main.js"></script>
+<script type="text/javascript" src="script/view/parser.js"></script>
+
+
+<!-- Controllers (app.c) -->
+<script type="text/javascript" src="script/controller/contact.js"></script>
+<script type="text/javascript" src="script/controller/log.js"></script>
+<script type="text/javascript" src="script/controller/data.js"></script>
+<script type="text/javascript" src="script/controller/geolocation.js"></script>
+<script type="text/javascript" src="script/controller/accelerometer.js"></script>
+<script type="text/javascript" src="script/controller/notify.js"></script>
+<script type="text/javascript" src="script/controller/photo.js"></script>
+<script type="text/javascript" src="script/controller/messaging.js"></script>
+<script type="text/javascript" src="script/controller/orientation.js"></script>
+<script type="text/javascript" src="script/controller/map.js"></script>
+<script type="text/javascript" src="script/controller/audio.js"></script>
+<script type="text/javascript" src="script/controller/webview.js"></script>
+
+
+<!-- Styles -->
+<link type="text/css" rel="stylesheet" href="resources/css/sencha-touch.css"/>
