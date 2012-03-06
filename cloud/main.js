@@ -21,7 +21,7 @@ var getUI = function (params, callback) {
 
   console.log('num. menuitems = ' + menu.length);
 
-  return callback(menu);
+  return callback({menu: menu});
 };
 
 exports.getUI = getUI;
